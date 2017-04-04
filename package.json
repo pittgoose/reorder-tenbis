@@ -1,0 +1,20 @@
+{
+  "name": "reorder-tenbis",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "cucumber": "1.3.2",
+    "protractor": "5.1.1",
+    "protractor-cucumber-framework": "0.6.0"
+  },
+  "scripts": {
+    "prepare":"node node_modules/protractor/bin/webdriver-manager update",
+    "order": "node node_modules/protractor/bin/protractor protractor.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "shelljs": "0.7.0",
+    "typescript": "2.2.1"
+  }
+}

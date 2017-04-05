@@ -13,5 +13,5 @@ exports.config = {
             'helper.js'
         ]
     },
-    allScriptsTimeout: 30 * 1000
+    allScriptsTimeout: 60 * 1000
 };

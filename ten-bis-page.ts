@@ -1,9 +1,9 @@
 import {element, by, ElementFinder, browser, ExpectedConditions as EC} from 'protractor';
 export class TenBisPage {
     returningCustomerButton = element(by.css('[data-home-page-logon-button="true"]'));
-    emailInput = element(by.css('[data-logon-popup-form-user-name-input="true"]'));
-    passwordInput = element(by.css('[type="password"]'));
-    submitLoginButton = element(by.css('.submitButton'));
+    emailInput = element.all(by.css('[data-logon-popup-form-user-name-input="true"]')).first();
+    passwordInput = element.all(by.css('[type="password"]')).first();
+    submitLoginButton = element.all(by.css('.submitButton')).first();
     pastOrdersTab = element(by.cssContainingText('.singleTabDiv', 'הזמנה חוזרת'));
     firstReorderButton = element.all(by.css('[data-reorder-button="true"]')).first();
     orderConfirmationButton = element(by.id('orderConfirmationBtn'));

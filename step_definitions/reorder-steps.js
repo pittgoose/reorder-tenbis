@@ -12,8 +12,9 @@ module.exports = function () {
         var credentials = JSON.parse(fs.readFileSync('./credentials.json').toString());
         return tenBisPage.login(credentials);
     });
-    this.When(/^I reorder my last meal$/, function () {
-        return tenBisPage.reorderLastMeal();
+    this.When(/^I reorder my last meal$/, function () { return tenBisPage.reorderLastMeal(); });
+    this.Then(/^I should see my order and be satisfied$/, function () {
+        return console.log('You will never be satisfied!');
     });
 };
 //# sourceMappingURL=reorder-steps.js.map

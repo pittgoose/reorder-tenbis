@@ -16,7 +16,9 @@ export = function () {
     });
 
 
-    this.When(/^I reorder my last meal$/, () => {
-        return tenBisPage.reorderLastMeal();
+    this.When(/^I reorder my last meal$/, () => tenBisPage.reorderLastMeal());
+
+    this.Then(/^I should see my order and be satisfied$/, () => {
+        return console.log('You will never be satisfied!')
     });
 };

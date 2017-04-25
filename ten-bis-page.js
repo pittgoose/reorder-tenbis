@@ -4,9 +4,9 @@ var protractor_1 = require("protractor");
 var TenBisPage = (function () {
     function TenBisPage() {
         this.returningCustomerButton = protractor_1.element(protractor_1.by.css('[data-home-page-logon-button="true"]'));
-        this.emailInput = protractor_1.element(protractor_1.by.css('[data-logon-popup-form-user-name-input="true"]'));
-        this.passwordInput = protractor_1.element(protractor_1.by.css('[type="password"]'));
-        this.submitLoginButton = protractor_1.element(protractor_1.by.css('.submitButton'));
+        this.emailInput = protractor_1.element.all(protractor_1.by.css('[data-logon-popup-form-user-name-input="true"]')).first();
+        this.passwordInput = protractor_1.element.all(protractor_1.by.css('[type="password"]')).first();
+        this.submitLoginButton = protractor_1.element.all(protractor_1.by.css('.submitButton')).first();
         this.pastOrdersTab = protractor_1.element(protractor_1.by.cssContainingText('.singleTabDiv', 'הזמנה חוזרת'));
         this.firstReorderButton = protractor_1.element.all(protractor_1.by.css('[data-reorder-button="true"]')).first();
         this.orderConfirmationButton = protractor_1.element(protractor_1.by.id('orderConfirmationBtn'));
